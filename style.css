@@ -1,0 +1,47 @@
+/* Default CSS
+======================================*/
+html { height: 100%; }
+body { margin: 0; font-family: Helvetica; height: 100%; background: #383838; }
+.page-wrapper { overflow: hidden; position: relative; }
+.content-wrapper { background: #fff; bottom: 0; overflow-x: hidden; overflow-y: scroll; position: fixed; right: 0; top: 0; }
+
+/* Default Navigation */
+#ng-navigation { width: 100%; overflow: hidden; z-index: 5; }
+#ng-navigation .ng-nav { margin: 0; position: relative; left: 0; top: 0; height: 100%; display: block; z-index: 0; overflow: auto; }
+#ng-navigation ul.ng-nav li { list-style: none; }
+
+/* Navigation controls */
+#ng-navigation-controls { display: none; }
+#ng-navigation-controls .ng-nav-inner { padding: 0; min-height: 40px; }
+#ng-navigation-controls .ng-nav-inner:before,
+#ng-navigation-controls .ng-nav-inner:after { content: "", display: table; line-height: 0; }
+#ng-navigation-controls a.ng-button { text-indent: -9999px; display: block; width: 30px; height: 30px; float: left; margin-top: 5px; margin-left: 5px; }
+
+/* User modified CSS
+======================================*/
+.content-wrapper { background: #fff; width: 80%; }
+.content-wrapper .content { padding: 30px; }
+#ng-navigation .ng-nav { width: 20%; }
+#ng-navigation .ng-nav h2 { margin: 0; padding: 10px 20px; background: #252525; color: #fff; font-family: 'Tauri', sans-serif; font-weight: normal; }
+#ng-navigation .ng-nav ul { margin: 0; padding: 0; }
+#ng-navigation .ng-nav ul li { list-style: none; padding: 0; margin: 0; }
+#ng-navigation .ng-nav ul li a { color: #999; text-decoration: none; font-size: 14px; padding: 10px 20px; display: block; }
+#ng-navigation .ng-nav ul li a:hover { background: #252525; }
+#ng-navigation-controls .ng-nav-inner { background: #000; }
+#ng-navigation-controls a.ng-button { background: #3D3C3C; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+#ng-navigation-controls a.ng-button span.icon { background: none repeat scroll 0 0 #FFFFFF; display: block; height: 2px; margin: 3px auto; width: 20px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+#ng-navigation-controls a.ng-button span.icon.first { margin-top: 9px; }
+
+/* up to 480
+======================================*/
+@media (max-width: 1024px) {
+    .content-wrapper { width: 70%; }
+    #ng-navigation .ng-nav { width: 30% }
+    #ng-navigation-controls { display: none; }
+}
+
+@media (max-width: 768px) {
+    #ng-navigation-controls { display: block; }
+    .content-wrapper { width: 100%; }
+    #ng-navigation .ng-nav { width: auto; }
+}
