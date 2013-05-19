@@ -1,6 +1,6 @@
-**Demo**: [ngResponsiveNavigation](http://jsbin.com/atodeh/18/edit) - ** Do not forget to click first on "Run with JS" located on output window **
+**Demo**: [ngResponsiveNavigation](http://tmatijev.github.io/jquery.responsiveNavigation)
 
-repsonsiveNavigation
+responsiveNavigation
 ==========================
 
 This jQuery script creates navigation used for the mobile phones and tablets. When collapsing, navigation is animating from left to right, calculating current window width minus button width (very similar like on youtube mobile app).
@@ -30,7 +30,7 @@ $(function(){
 
 ## Demos ##
 
-* [repsonsiveNavigation](http://jsbin.com/atodeh/16/edit) - ** Do not forget to click first on "Run with JS" located on output window **
+* [responsiveNavigation](http://tmatijev.github.io/jquery.responsiveNavigation)
 
 ## Warning ##
 If you are changing prefix and classes in html file, do not forget to change your CSS file!
